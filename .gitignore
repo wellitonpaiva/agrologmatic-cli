@@ -8,5 +8,6 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 *.log
+*lock.json
 web-build/
 web-report/
