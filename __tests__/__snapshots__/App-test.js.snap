@@ -1,22 +1,421 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`App renders the loading screen 1`] = `
-<AppLoading
-  onError={[Function]}
-  onFinish={[Function]}
-  startAsync={[Function]}
-/>
-`;
-
-exports[`App renders the root without loading screen 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#fff",
-      "flex": 1,
-    }
-  }
->
-  <AppNavigator />
-</View>
-`;
+<AppNavigator />
+       <View
+         style={
+           Object {
+             "backgroundColor": "#fff",
+             "flex": 1,
+           }
+         }
+       >
+         <RCTScrollView
+           contentContainerStyle={
+             Object {
+               "paddingTop": 30,
+             }
+           }
+           style={
+             Object {
+               "backgroundColor": "#fff",
+               "flex": 1,
+             }
+           }
+         >
+           <View>
+             <View
+               style={
+                 Object {
+                   "alignItems": "center",
+                   "marginBottom": 20,
+                   "marginTop": 10,
+                 }
+               }
+             >
+               <Text
+                 style={
+                   Object {
+                     "color": "rgba(0,0,0,0.4)",
+                     "fontSize": 20,
+                     "lineHeight": 25,
+                     "textAlign": "center",
+                   }
+                 }
+               >
+                 Bem vindo ao AgroLog-Matic
+               </Text>
+               <Image
+                 source={1}
+                 style={
+                   Object {
+                     "height": 80,
+                     "marginLeft": -10,
+                     "marginTop": 3,
+                     "resizeMode": "contain",
+                     "width": 100,
+                   }
+                 }
+               />
+               <Text
+                 style={
+                   Object {
+                     "color": "rgba(96,100,109, 1)",
+                     "fontSize": 17,
+                     "lineHeight": 24,
+                     "textAlign": "center",
+                   }
+                 }
+               >
+                 O que gostaria de fazer?
+               </Text>
+             </View>
+             <View>
+               <Text
+                 style={
+                   Object {
+                     "color": "rgba(96,100,109, 1)",
+                     "fontSize": 20,
+                     "lineHeight": 24,
+                     "textAlign": "center",
+                   }
+                 }
+               >
+                 Minhas Propriedades
+               </Text>
+               <RCTScrollView
+                 data={
+                   Array [
+                     Object {
+                       "endereco": "Rua das Flores, 1 - São Raimundo - DR",
+                       "nome": "Fazenda1",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 2 - São Raimundo - DR",
+                       "nome": "Fazenda2",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 3 - São Raimundo - DR",
+                       "nome": "Fazenda3",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 4 - São Raimundo - DR",
+                       "nome": "Fazenda4",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 5 - São Raimundo - DR",
+                       "nome": "Fazenda5",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 6 - São Raimundo - DR",
+                       "nome": "Fazenda6",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 7 - São Raimundo - DR",
+                       "nome": "Fazenda7",
+                     },
+                     Object {
+                       "endereco": "Rua das Flores, 8 - São Raimundo - DR",
+                       "nome": "Fazenda8",
+                     },
+                   ]
+                 }
+                 disableVirtualization={false}
+                 getItem={[Function]}
+                 getItemCount={[Function]}
+                 horizontal={false}
+                 initialNumToRender={10}
+                 keyExtractor={[Function]}
+                 maxToRenderPerBatch={10}
+                 numColumns={1}
+                 onContentSizeChange={[Function]}
+                 onEndReachedThreshold={2}
+                 onLayout={[Function]}
+                 onMomentumScrollEnd={[Function]}
+                 onScroll={[Function]}
+                 onScrollBeginDrag={[Function]}
+                 onScrollEndDrag={[Function]}
+                 removeClippedSubviews={false}
+                 renderItem={[Function]}
+                 scrollEventThrottle={50}
+                 stickyHeaderIndices={Array []}
+                 updateCellsBatchingPeriod={50}
+                 viewabilityConfigCallbackPairs={Array []}
+                 windowSize={21}
+               >
+                 <View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda1
+                         </Text>
+                         <Text>
+                           Rua das Flores, 1 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda2
+                         </Text>
+                         <Text>
+                           Rua das Flores, 2 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda3
+                         </Text>
+                         <Text>
+                           Rua das Flores, 3 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda4
+                         </Text>
+                         <Text>
+                           Rua das Flores, 4 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda5
+                         </Text>
+                         <Text>
+                           Rua das Flores, 5 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda6
+                         </Text>
+                         <Text>
+                           Rua das Flores, 6 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda7
+                         </Text>
+                         <Text>
+                           Rua das Flores, 7 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                   <View
+                     onLayout={[Function]}
+                     style={null}
+                   >
+                     <View
+                       accessible={true}
+                       isTVSelectable={true}
+                       onResponderGrant={[Function]}
+                       onResponderMove={[Function]}
+                       onResponderRelease={[Function]}
+                       onResponderTerminate={[Function]}
+                       onResponderTerminationRequest={[Function]}
+                       onStartShouldSetResponder={[Function]}
+                       style={null}
+                     >
+                       <View
+                         style={
+                           Object {
+                             "borderBottomColor": "#000",
+                             "borderStyle": "solid",
+                             "marginBottom": 10,
+                             "marginLeft": 10,
+                           }
+                         }
+                       >
+                         <Text>
+                           Fazenda8
+                         </Text>
+                         <Text>
+                           Rua das Flores, 8 - São Raimundo - DR
+                         </Text>
+                       </View>
+                     </View>
+                   </View>
+                 </View>
+               </RCTScrollView>
+             </View>
+           </View>
+         </RCTScrollView>
+       </View>
