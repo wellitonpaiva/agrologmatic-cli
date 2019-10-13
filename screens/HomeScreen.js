@@ -26,14 +26,14 @@ export default function HomeScreen() {
           <Text style={styles.textHeader}>Minhas Propriedades</Text>
           <FlatList
             data={[
-              { nome: 'Fazenda1', endereco: 'Rua das Flores, 1 - São Raimundo - DR' },
-              { nome: 'Fazenda2', endereco: 'Rua das Flores, 2 - São Raimundo - DR' },
-              { nome: 'Fazenda3', endereco: 'Rua das Flores, 3 - São Raimundo - DR' },
-              { nome: 'Fazenda4', endereco: 'Rua das Flores, 4 - São Raimundo - DR' },
-              { nome: 'Fazenda5', endereco: 'Rua das Flores, 5 - São Raimundo - DR' },
-              { nome: 'Fazenda6', endereco: 'Rua das Flores, 6 - São Raimundo - DR' },
-              { nome: 'Fazenda7', endereco: 'Rua das Flores, 7 - São Raimundo - DR' },
-              { nome: 'Fazenda8', endereco: 'Rua das Flores, 8 - São Raimundo - DR' },
+              { id: 1, nome: 'Fazenda1', endereco: 'Rua das Flores, 1 - São Raimundo - DR' },
+              { id: 2, nome: 'Fazenda2', endereco: 'Rua das Flores, 2 - São Raimundo - DR' },
+              { id: 3, nome: 'Fazenda3', endereco: 'Rua das Flores, 3 - São Raimundo - DR' },
+              { id: 4, nome: 'Fazenda4', endereco: 'Rua das Flores, 4 - São Raimundo - DR' },
+              { id: 5, nome: 'Fazenda5', endereco: 'Rua das Flores, 5 - São Raimundo - DR' },
+              { id: 6, nome: 'Fazenda6', endereco: 'Rua das Flores, 6 - São Raimundo - DR' },
+              { id: 7, nome: 'Fazenda7', endereco: 'Rua das Flores, 7 - São Raimundo - DR' },
+              { id: 8, nome: 'Fazenda8', endereco: 'Rua das Flores, 8 - São Raimundo - DR' },
             ]}
             renderItem={({ item }) => (
               <TouchableHighlight onPress={() => handlePropriedadePress(item)}>
