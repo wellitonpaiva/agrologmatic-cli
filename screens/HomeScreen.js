@@ -14,13 +14,6 @@ class HomeScreen extends React.Component {
 
   static navigationOptions = {
     title: 'Home',
-    headerStyle: {
-      backgroundColor: '#03A9F4',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      fontWeight: 'bold',
-    },
   };
 
   render() {
@@ -49,7 +42,7 @@ class HomeScreen extends React.Component {
                 { id: 8, nome: 'Fazenda8', endereco: 'Rua das Flores, 8 - São Raimundo - DR' },
               ]}
               renderItem={({ item }) => (
-                <TouchableHighlight onPress={() => this.props.navigation.navigate('Propriedade')}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate('Propriedade', {'item': item})}>
                   <View style={styles.listItem} >
                     <Text>{item.nome}</Text>
                     <Text>{item.endereco}</Text>

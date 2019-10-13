@@ -1,30 +1,23 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { StyleSheet, 
+  ScrollView,
+  Text, 
+} from 'react-native';
 
 class PropriedadeScreen extends React.Component {
 
   static navigationOptions = {
     title: 'Propriedade',
-    headerStyle: {
-      backgroundColor: '#03A9F4',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      fontWeight: 'bold',
-    },
   };
 
   render() {
+
+    const { navigation } = this.props;
+    
+
     return (
       <ScrollView style={styles.container}>
-        {/**
-       * Go ahead and delete ExpoLinksView and replace it with your content;
-       * we just wanted to provide you with some helpful links.
-       */}
-        <ExpoLinksView />
+        <Text>Propriedade {this.props.navigation.state.params.item.nome}</Text>
       </ScrollView>
     );
   }
