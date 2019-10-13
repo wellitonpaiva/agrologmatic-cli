@@ -2,21 +2,17 @@ import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {
   Image,
-  Platform,
   ScrollView,
   StyleSheet,
   FlatList,
   Text,
-  ToastAndroid,
   View,
   TouchableHighlight,
 } from 'react-native';
 
-import { MonoText } from '../components/StyledText';
-
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>     
+    <View style={styles.container}>
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
@@ -40,13 +36,13 @@ export default function HomeScreen() {
               { nome: 'Fazenda8', endereco: 'Rua das Flores, 8 - São Raimundo - DR' },
             ]}
             renderItem={({ item }) => (
-              <TouchableHighlight onPress={() => handleMinhasPropriedadesPress(item)}>
+              <TouchableHighlight onPress={() => handlePropriedadePress(item)}>
                 <View style={styles.listItem} >
                   <Text>{item.nome}</Text>
                   <Text>{item.endereco}</Text>
                 </View>
               </TouchableHighlight>
-            )} 
+            )}
           />
         </View>
       </ScrollView>
@@ -54,12 +50,8 @@ export default function HomeScreen() {
   );
 }
 
-HomeScreen.navigationOptions = {
-  header: null,
-};
-
-function handleMinhasPropriedadesPress(item) {
-  ToastAndroid.show(item.nome, ToastAndroid.SHORT);
+function handlePropriedadePress(item) {
+  this.props.navigation.push('Propriedade')
 };
 
 const styles = StyleSheet.create({
@@ -80,7 +72,7 @@ const styles = StyleSheet.create({
     color: 'rgba(96,100,109, 1)',
     lineHeight: 24,
     textAlign: 'center',
-  },  
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -89,7 +81,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#aaa',
   },
-  
   contentContainer: {
     paddingTop: 30,
   },

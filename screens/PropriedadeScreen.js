@@ -1,8 +1,10 @@
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function LinksScreen() {
+export default function PropriedadeScreen() {
   return (
     <ScrollView style={styles.container}>
       {/**
@@ -14,7 +16,7 @@ export default function LinksScreen() {
   );
 }
 
-LinksScreen.navigationOptions = {
+PropriedadeScreen.navigationOptions = {
   title: 'Links',
 };
 
