@@ -19,17 +19,18 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView
-          style={styles.container}
-          contentContainerStyle={styles.contentContainer}>
-          <View style={styles.welcomeContainer}>
-            <Text style={styles.welcomeText}>Bem vindo ao AgroLog-Matic</Text>
-            <Image source={require('../assets/images/robot-plant.png')} style={styles.welcomeImage} />
-            <Text style={styles.text}>O que gostaria de fazer?</Text>
-          </View>
 
-          <View>
-            <Text style={styles.textHeader}>Minhas Propriedades</Text>
+        <View style={styles.welcomeContainer}>
+          <Text style={styles.welcomeText}>Bem vindo ao AgroLog-Matic</Text>
+          <Image source={require('../assets/images/robot-plant.png')} style={styles.welcomeImage} />
+          <Text style={styles.text}>O que gostaria de fazer?</Text>
+        </View>
+
+        <View>
+          <Text style={styles.textHeader}>Minhas Propriedades</Text>
+          <ScrollView
+            style={styles.scroll}
+            contentContainerStyle={styles.contentContainer}>
             <FlatList
               data={[
                 { id: 1, nome: 'Fazenda1', endereco: 'Rua das Flores, 1 - São Raimundo - DR' },
@@ -40,9 +41,17 @@ class HomeScreen extends React.Component {
                 { id: 6, nome: 'Fazenda6', endereco: 'Rua das Flores, 6 - São Raimundo - DR' },
                 { id: 7, nome: 'Fazenda7', endereco: 'Rua das Flores, 7 - São Raimundo - DR' },
                 { id: 8, nome: 'Fazenda8', endereco: 'Rua das Flores, 8 - São Raimundo - DR' },
+                { id: 9, nome: 'Fazenda9', endereco: 'Rua das Flores, 9 - São Raimundo - DR' },
+                { id: 10, nome: 'Fazenda10', endereco: 'Rua das Flores, 10 - São Raimundo - DR' },
+                { id: 11, nome: 'Fazenda11', endereco: 'Rua das Flores, 11 - São Raimundo - DR' },
+                { id: 12, nome: 'Fazenda12', endereco: 'Rua das Flores, 12 - São Raimundo - DR' },
+                { id: 13, nome: 'Fazenda13', endereco: 'Rua das Flores, 13 - São Raimundo - DR' },
+                { id: 14, nome: 'Fazenda14', endereco: 'Rua das Flores, 14 - São Raimundo - DR' },
+                { id: 15, nome: 'Fazenda15', endereco: 'Rua das Flores, 15 - São Raimundo - DR' },
+                { id: 16, nome: 'Fazenda16', endereco: 'Rua das Flores, 16 - São Raimundo - DR' },
               ]}
               renderItem={({ item }) => (
-                <TouchableHighlight onPress={() => this.props.navigation.navigate('Propriedade', {'item': item})}>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate('Propriedade', { 'item': item })}>
                   <View style={styles.listItem} >
                     <Text>{item.nome}</Text>
                     <Text>{item.endereco}</Text>
@@ -50,9 +59,10 @@ class HomeScreen extends React.Component {
                 </TouchableHighlight>
               )}
             />
-          </View>
-        </ScrollView>
-      </View>
+          </ScrollView>
+        </View>
+
+      </View >
     );
   }
 }
@@ -82,6 +92,10 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    backgroundColor: '#fff',
+  },
+  container: {
+    flex: 2,
     backgroundColor: '#fff',
   },
   myPropertiesContainer: {
